@@ -5,51 +5,37 @@ body,
     margin: 0;
 }
 .flex-container {
+    background-color: darkgray;
     width: 700px;
     height: 300px;
+    display: flex;
+    justify-content:space-between;
+    /*align-items:flex-start,flex-end;*/
 }
-div:nth-child(1){
+.flex-container div {
     width: 100px;
     height: 100px;
     background: #DAA520;
     border-radius: 50%;
-
-    position: absolute;
-    top: 0px; left: 0px;
 }
-div:nth-child(2){
-    width: 100px;
-    height: 100px;
-    background: #DAA520;
-    border-radius: 50%;
 
-    position: absolute;
-    top: 100px; left: 150px;
+div:nth-child(1)
+{
+    align-self:flex-start;
 }
-div:nth-child(3){
-    width: 100px;
-    height: 100px;
-    background: #DAA520;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 200px; left: 300px;
+div:nth-child(2)
+{
+    align-self:center;
 }
-div:nth-child(4){
-    width: 100px;
-    height: 100px;
-    background: #DAA520;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 100px; left: 450px;
+div:nth-child(3)
+{
+    align-self:flex-end;
 }
-div:nth-child(5){
-    width: 100px;
-    height: 100px;
-    background: #DAA520;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 0px; left: 600px;
+div:nth-child(4)
+{
+    align-self:center;
+}
+div:nth-child(5)
+{
+    align-self:flex-start;
 }
