@@ -5,12 +5,10 @@ body,
     margin: 0;
 }
 .flex-container {
-    background-color: darkgray;
     width: 700px;
     height: 300px;
-    display: flex;
+    display:inline-flex;
     justify-content:space-between;
-    /*align-items:flex-start,flex-end;*/
 }
 .flex-container div {
     width: 100px;
@@ -18,24 +16,8 @@ body,
     background: #DAA520;
     border-radius: 50%;
 }
-
-div:nth-child(1)
-{
-    align-self:flex-start;
-}
-div:nth-child(2)
-{
-    align-self:center;
-}
-div:nth-child(3)
-{
-    align-self:flex-end;
-}
-div:nth-child(4)
-{
-    align-self:center;
-}
-div:nth-child(5)
-{
-    align-self:flex-start;
-}
+div:nth-child(1) { align-self:flex-start;}
+div:nth-child(2) { align-self:center;}
+div:nth-child(3) { align-self:flex-end;}
+div:nth-child(4) { align-self:center;}
+div:nth-child(5) { align-self:flex-start;}
